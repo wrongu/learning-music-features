@@ -1,0 +1,4 @@
+- test bias of harmony boosting by training on set of random noise (Olshausen)
+- likewise, test bias of classifier by using totally random features (Saxe, Andrew)
+
+midi source: http://www.piano-midi.de/

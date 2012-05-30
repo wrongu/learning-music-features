@@ -1,0 +1,134 @@
+h1{
+	text-decoration: none;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 18px;
+	font-weight: bold;
+	color: #003366;
+}
+
+h2{
+	text-decoration: none;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 18px;
+	font-weight: bold;
+	color: #660000;
+}
+
+h3{
+	text-decoration: none;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 14px;
+	line-height: 9px;
+	font-weight: bold;
+	color: #003366;
+}
+
+h4{
+	text-decoration: none;
+	margin-left: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+
+p{
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;   
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+p.note{
+	color: #990066;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;   
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 14px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+p.ref{
+	color: #000033;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;   
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 24px;
+	line-height: 12px;
+	text-decoration: none;
+}
+
+p.main{
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;   
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: 5px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+ul{
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #800000;
+}
+
+ol{
+	font-family: Verdana, Arial, Helvetica, sans-serif;  
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.function{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #660000;	
+}
+
+a{
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, Geneva;  
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #800000;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+caption{
+	color: #303030;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+td{
+	color: #012c5f;
+	font-family: Verdana, Arial, Helvetica, sans-serif;   
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: 13px;
+}
