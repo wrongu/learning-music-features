@@ -1,3 +1,4 @@
 *.m~
 PATCH_3Darray/*
 *.DS_Store
+*.html
