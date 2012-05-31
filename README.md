@@ -20,7 +20,7 @@ _Reconstruction_ of image `j` is defined as follows:
 
 A vector of ![][alpha] is learned for *each* image using the given ![][phi].
 
-The denseness (negative sparseness) of ~[][alpha] is defined as 
+The denseness (negative sparseness) of ![][alpha] is defined as 
 
 ![](images/dense.png)
 
@@ -64,7 +64,7 @@ First, run `init`. After this, you can just use `run` to run the full algorithm 
 * `inner - max number of iterations for gradient descent on ![][alpha] (usually converges in under 20, but default is 60).
 * `NUM_IMG_PER_PHI_UPDATE` - As mentioned in the fine print of Olshausen and Field's paper, we don't need to try to reconstruct *all* the images before updating ![][phi]. This parameter controls how many train images to look at per update of ![][phi]. Default is 100. However, I got best results before adding this option in. Might as well set it to `Inf`.
 
-Now for actually running it.. Here is a typical command line session (on remote server). Note that, due to some strange parallelization bugs, larger songs can't be loaded in parallel. This can be done separately by calling `get_song_matrices` after specifying `composers`.
+Now for actually running it.. Note that, due to some strange parallelization bugs, larger songs can't be loaded in parallel. This can be done separately by calling `get_song_matrices` after specifying `composers`. Here is a typical command line session (on remote server). 
 
     >> init
     >> get_song_matrices; % takes a while, but sometimes breaks parallel stuff if the songs are large, so best to do it here
@@ -77,6 +77,8 @@ Now for actually running it.. Here is a typical command line session (on remote 
 __test scripts__
 
 The main test script (and the only one that I can guarantee works) is `test_iterative_sparse_encoding.m`. With nothing else specified, this will do the grating test that I presented in the poster presentation; it will generate 25 training images made from the sum of 5 random gratings and run ISC.
+
+The other important test is `test_classifier.m`, which uses the results of feature-generation (must have `B_ISC` and `B_PCA` in workspace) and convolves them with small samples of songs from the current composers. Using a hack-y version of n-fold cross validation, it does a bunch of classification trials and plots the results. Note: this was added after the poster presentation and may be buggy. Also the results are inconclusive.
 
 __plots__
 
@@ -101,10 +103,6 @@ I wrote all code from scratch, except the midi_lib, which I downloaded from [her
 
 PATCH_3Darray is a 3D matrix visualization function I downloaded [here](http://www.mathworks.com/matlabcentral/fileexchange/28497-plot-a-3d-array-using-patch). Since I converted from 3D song representations to 2D, I no longer use this.
 
----
-
-Extras/Misc.
----
 
 [alpha]: images/alpha.png
 [phi]: images/phi.png
