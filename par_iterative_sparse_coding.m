@@ -1,5 +1,3 @@
-% [alphas, phis] = iterative_sparse_encoding(train_set, n_features)
-%
 % this is the *main learning algorithm* of my project
 % source: Oshausen & Field, 1996.
 
@@ -7,7 +5,7 @@ function [A, PHI, phi_norm_hist, mean_err, mean_loss, mean_dense, phi_init] = ..
     par_iterative_sparse_coding(train_set, n_features, lambda, sigma, max_all_iter, ...
                                 max_inner_iter, A_conv, phi_conv, PHI_INIT, images_per_phi_update)
 
-	if nargin < 10
+	if nargin < 10 || images_per_phi_update > length(train_set)
         images_per_phi_update = length(train_set);
     end
                             

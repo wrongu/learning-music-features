@@ -28,7 +28,7 @@ end
 
 %% PLOT ERROR CONVERGENCE
 
-cut=1;
+cut=100;
 mean_err = mean_err_orig(cut:end);
 b_hist = b_hist_orig(cut:end);
 

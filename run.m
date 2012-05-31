@@ -28,13 +28,19 @@ end
 
 N_SONGS = length(song2d_cell);
 
-N_TRAIN_WINDOWS = 400;
+if ~exist('N_TRAIN_WINDOWS', 'var')
+    N_TRAIN_WINDOWS = 400;
+end
 
 N_WINDOWS_PER_SONG = floor(N_TRAIN_WINDOWS / length(song2d_cell));
 
-N_FEATURES = 25;
+if ~exist('N_FEATURES', 'var')
+    N_FEATURES = 25;
+end
 
-N_HARMONY = 0;
+if ~exist('N_HARMONY', 'var')
+    N_HARMONY = 0;
+end
 
 WINDOW_WIDTH = 12;
 
