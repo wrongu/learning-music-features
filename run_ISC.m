@@ -97,7 +97,7 @@ if plots
     %   (an attempt to put most 'significant' features first)
     A_weights = mean(abs(A_ISC),1);
     [sorted_A,sort_inds] = sort(A_weights, 'descend');
-    Babs = cellfun(@(b) abs(b.^2), B_ISC, 'UniformOutput', false);
+    Babs = cellfun(@(b) abs(b.^2    ), B_ISC, 'UniformOutput', false);
     plot_imgs_rescale(Babs(sort_inds), 'ISC: LEARNED FEATURES', 25, false);
     
     figure();

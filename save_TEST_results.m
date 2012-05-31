@@ -2,7 +2,7 @@
 
 fprintf('SAVING to\n');
 
-fname = sprintf('test_ISC__%s__%d_train__%d_feat_size_%d__%d_ISC_iter__%d_lambda__%d_sigma_', test_type, length(TRAIN_WINDOWS), N_FEATURES, WINDOW_WIDTH, outer, lambda, sigma);
+fname = sprintf('test_ISC__%s__%d_train__%d_feat_size_%d__%d_ISC_iter__%f_lambda__%f_sigma_', test_type, length(TRAIN_WINDOWS), N_FEATURES, WINDOW_WIDTH, outer, lambda, sigma);
 fnames = dir('saved data/remote');
 fnames = fnames(~[fnames.isdir]);
 count_fname = 0;

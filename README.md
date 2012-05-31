@@ -99,7 +99,7 @@ Data format/important variables
 What I did
 ----
 
-I wrote all code from scratch, except the midi_lib, which I downloaded from [here](https://www.jyu.fi/hum/laitokset/musiikki/en/research/coe/materials/miditoolbox/). I downloaded the midi files from two sources: [ragtime](http://www.trachtman.org/ragtime/) and [classical](http://www.piano-midi.de/midi_files.htm).
+I wrote almost all code from scratch (2114 lines in .m files), except the midi_lib, which I downloaded from [here](https://www.jyu.fi/hum/laitokset/musiikki/en/research/coe/materials/miditoolbox/) and `suplabel.m` (adds a super-title to all subplots), which I downloaded [here](http://www.mathworks.com/matlabcentral/fileexchange/7772-suplabel). I downloaded the midi files from two sources: [ragtime](http://www.trachtman.org/ragtime/) and [classical](http://www.piano-midi.de/midi_files.htm).
 
 PATCH_3Darray is a 3D matrix visualization function I downloaded [here](http://www.mathworks.com/matlabcentral/fileexchange/28497-plot-a-3d-array-using-patch). Since I converted from 3D song representations to 2D, I no longer use this.
 
